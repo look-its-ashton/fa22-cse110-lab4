@@ -60,4 +60,8 @@ The function returns "[ 50, 100, 150 ]" since <code>discounted</code> is just a 
 ## *question 15:*
 The difference is that "==" tests if the values are equivalent after type conversion and "===" compares values without casting either datatype.
 
-## *question 16:*
+## *question 17:*
+The result of this call is "[ 2, 4, 6 ]" which is actually just the input list with every element multiplied by 2. This happens because the function iterates through the input list, calls <code>doSomething</code> on this element which returns double the input, and pushes the result onto the output list. The result is that every element of the input is doubled and sent to the output.
+
+## *question 19:*
+The output is: <br>1<br>4<br>3<br>2<br> This happens because the function executes the synchronous print statements first and then the async statements later. The second async print statement doesn't have a delay so it's printed first and the first async statement is printed after 1 second.
